@@ -13,8 +13,8 @@ console.log(heading.className)
 //console.log(heading)*/
 
 //const enlaces = document.querySelector ('.navegacion a')
-const enlaces =document.querySelectorAll ('.navegacion a')
-enlaces.forEach(elemento => elemento.textContent = 'Cambio el enlace')
+const enlaces = document.querySelectorAll ('.navegacion a')
+enlaces.forEach(elemento => elemento.textContent = 'Cambio el enlacesillo')
 
 //console.log(enlaces)
 
