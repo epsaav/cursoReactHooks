@@ -12,21 +12,21 @@ inputPassword.addEventListener('input',()=>{
 },500)
 })
 
-const alerta = document.createElement('DIV')
-alerta.classList.add('alerta') 
+const alerta = document.createElement ('DIV')
+alerta.classList.add ('alerta')
 
-const nombre = document.querySelector (".nombre").value
-const password = document.querySelector (".password").value
+
 
 forma.addEventListener('submit', (e)=>{
     e.preventDefault()
-    if (nombre==='' && password==''){
-       // alert(nombre)
-        alerta.textContent =' Todos los campos son requeridos' 
+    const nombre = document.querySelector (".nombre").value
+    const password = document.querySelector (".password").value
+    if (nombre === '' || password === '') {
+        alerta.textContent = 'Todos los campos son requeridos'
         alerta.classList.add('error')
     }
-    else{
-        alerta.textContent ='...Todo bien'
+    else {
+        alerta.textContent = 'Todo bien'
         alerta.classList.add('exito')
     }
     forma.appendChild(alerta)
